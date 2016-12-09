@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+body {
+	/* font-family */
+}
+#body-wraper {
+	padding-bottom: 2rem;
+}
+.bgcolor-gray {
+	background-color: gray;
+}
+.bgcolor-red {
+	background-color: #d7003a;
+}
+.bgcolor-orange {
+	background-color: #eb6238;
+}
+.bgcolor-yellow {
+	background-color: #f7c114;
+}
+.bgcolor-green {
+	background-color: #028760;
+}
+.bgcolor-blue {
+	background-color: #2ca9e1;
+}
+.bgcolor-indigo {
+	background-color: #165e83;
+}
+.bgcolor-purple {
+	background-color: #b44c97;
+}
+#bg0 {background-color: #ffffff;} /* header の背景色 */
+#bg1 {background-color: #d7003a;} /* Mission の背景色 */
+#bg2 {background-color: #eb6238;} /* Works の背景色 */
+#bg3 {background-color: #f7c114;} /* Rolls の背景色 */
+#bg4 {background-color: #028760;} /* Members の背景色 */
+#bg5 {background-color: #ffffff;} /* News の背景色 */
+#bg6 {background-color: #ffffff;} /* Contact の背景色 */
+#bg7 {background-color: #ffffff;} /* footer の背景色 */
+#bg0, #bg1, #bg2, #bg3, #bg4, #bg5, #bg6, #bg7 {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.section-title {
+	padding: 4rem 4rem;
+}
+
+ 
+/* --------------------------------
+ * Header
+ * -------------------------------- */
+.title-logo {
+	width: 70%;
+}
+.title {
+	margin: 50px 0 0;
+	position: relative;
+	display: inline-block;
+}
+.title-c {
+	color: #d7003a;/*紅*/
+	animation-duration: 2s;
+	animation-delay: 0.3s;
+}
+.title-co {
+	color: #eb6238;/*照柿*/
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+
+}
+.title-col {
+	color: #f7c114;/*藤黄*/
+	animation-duration: 2s;
+	animation-delay: 0.7s;
+}
+.title-colo {
+	color: #028760;/*常盤緑*/
+	animation-duration: 2s;
+	animation-delay: 0.9s;
+}
+.title-coloc {
+	color: #2ca9e1;/*天色*/
+	animation-duration: 2s;
+	animation-delay: 1.1s;
+}
+.title-colocr {
+	color: #165e83;/*藍色*/
+	animation-duration: 2s;
+	animation-delay: 1.3s;
+}
+.title-colocre {
+	color: #b44c97;/*紅紫*/
+	animation-duration: 2s;
+	animation-delay: 1.5s;
+}
+.title::before,
+.title::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-bottom: 1px solid #999;
+}
+.sub-title {
+	/*margin: 0 0 50px;*/
+}
+.sub-title-animation {
+	animation-duration: 2s;
+	animation-delay: 2s;
+}
+ 
+/* --------------------------------
+ * Mission
+ * -------------------------------- */
+.mission {
+	padding: 100px 20px;
+}
+
+
+/* --------------------------------
+ * Works
+ * -------------------------------- */
+.works {
+	padding: 100px 20px;
+}
+.work-box {
+	left: 0rem;
+	bottom: 10rem;
+	position: absolute;
+}
+.work-notyet {
+	filter: brightness(50%);
+}
+
+/* --------------------------------
+ * Rolls
+ * -------------------------------- */
+.rolls {
+	padding: 100px 20px;
+}
+
+/* --------------------------------
+ * Members
+ * -------------------------------- */
+.members {
+	padding: 100px 20px;
+}
+.nickname-label {
+	position: relative;
+}
+.nickname-label::after {
+	position: absolute;
+	bottom: 10px;
+	z-index: -1;
+	content: '';
+	width: 50%;
+	height: 50%;
+	box-shadow: 0 10px 15px rgba(0,0,0,.5);
+}
+.nickname-label::after {
+	right: 10px;
+	-webkit-transform: rotate(4deg);
+	transform: rotate(4deg);
+}
+
+
+/* --------------------------------
+ * News
+ * -------------------------------- */
+.news {
+	padding: 100px 20px;
+}
+
+/* --------------------------------
+ * Contact
+ * -------------------------------- */
+.contact {
+	padding: 80px 20px;
+	background: url('../img/contact/contact-bg.jpg') no-repeat fixed;
+}
+.contact-title {
+	color: white;
+}
+.contact-text {
+	color: gray;
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+	padding: 20px 0;
+	/*font-size: 1.3rem;*/
+}
+
+/* --------------------------------
+ * Back to top
+ * -------------------------------- */
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display:none;
+}
