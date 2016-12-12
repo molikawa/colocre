@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-body {
-	/* font-family */
-}
 #body-wraper {
 	padding-bottom: 2rem;
 }
@@ -30,15 +27,28 @@ body {
 .bgcolor-purple {
 	background-color: #b44c97;
 }
-#bg0 {background-color: #ffffff;} /* header の背景色 */
-#bg1 {background-color: #d7003a;} /* Mission の背景色 */
-#bg2 {background-color: #eb6238;} /* Works の背景色 */
-#bg3 {background-color: #f7c114;} /* Rolls の背景色 */
-#bg4 {background-color: #028760;} /* Members の背景色 */
-#bg5 {background-color: #ffffff;} /* News の背景色 */
-#bg6 {background-color: #ffffff;} /* Contact の背景色 */
-#bg7 {background-color: #ffffff;} /* footer の背景色 */
-#bg0, #bg1, #bg2, #bg3, #bg4, #bg5, #bg6, #bg7 {
+#bg-sec0 {
+	background-image: url('../img/bg-default.jpg');
+}
+#bg-sec1 {
+	background-image: url('../img/bg-mission.jpg');
+}
+#bg-sec2 {
+	background-image: url('../img/bg-works.jpg');
+}
+#bg-sec3 {
+	background-image: url('../img/bg-rolls.jpg');
+}
+#bg-sec4 {
+	background-image: url('../img/bg-members.jpg');
+}
+#bg-sec5 {
+	background-image: url('../img/bg-news.jpg');
+}
+#bg-sec6 {
+	background-image: url('../img/bg-default.jpg');
+}
+#bg-sec0, #bg-sec1, #bg-sec2, #bg-sec3, #bg-sec4, #bg-sec5, #bg-sec6 {
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -47,14 +57,19 @@ body {
 	z-index: -1;
 }
 
+
 .section-title {
-	padding: 4rem 4rem;
+	padding: 1rem 0 2rem;
 }
 
  
 /* --------------------------------
  * Header
  * -------------------------------- */
+.header {
+	padding: 0.5rem 0 15rem;
+}
+
 .title-logo {
 	width: 70%;
 }
@@ -120,7 +135,16 @@ body {
  * Mission
  * -------------------------------- */
 .mission {
-	padding: 100px 20px;
+	/*margin: 3rem 0 2rem;*/
+	padding: 2rem 0 2rem;
+}
+.mission-title {
+	padding: 1rem 0;
+}
+.mission-text {
+	background-color: rgba(255, 255, 255, 0.5);
+	display: inline-block;
+	padding: 1.5rem;
 }
 
 
@@ -128,16 +152,31 @@ body {
  * Works
  * -------------------------------- */
 .works {
-	padding: 100px 20px;
+	/*margin: 5rem;*/
+	padding: 5rem 0 2rem;
 }
-.work-box {
-	left: 0rem;
-	bottom: 10rem;
-	position: absolute;
+.work-title {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 1.2rem 1rem;
+}
+.work-text {
+	background-color: rgba(255, 255, 255, 0.8);
+	margin: 0.5rem;
+	padding: 1.5rem;
 }
 .work-notyet {
 	filter: brightness(50%);
 }
+.work-title-notyet {
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 1.2rem 1rem;
+}
+.work-text-notyet {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 0.5rem;
+	padding: 1.5rem;
+}
+
 
 /* --------------------------------
  * Rolls
@@ -182,14 +221,14 @@ body {
  * Contact
  * -------------------------------- */
 .contact {
-	padding: 80px 20px;
-	background: url('../img/contact/contact-bg.jpg') no-repeat fixed;
+	padding: 5rem 0;
+	background: url('../img/bg-contact.jpg') fixed
 }
 .contact-title {
-	color: white;
+	color: #D3D3D3;
 }
 .contact-text {
-	color: gray;
+	color: #D3D3D3;
 }
 
 /* --------------------------------
@@ -198,6 +237,7 @@ body {
 .footer {
 	padding: 20px 0;
 	/*font-size: 1.3rem;*/
+	background: url('../img/bg-default.jpg')
 }
 
 /* --------------------------------
@@ -206,7 +246,7 @@ body {
 .back-to-top {
     cursor: pointer;
     position: fixed;
-    bottom: 1.5rem;
+    bottom: 1.0rem;
     right: 1.5rem;
     display:none;
 }

@@ -1,6 +1,6 @@
 $(function() {
 	$(window).scroll(function () {
-		if ($('#mission').scrollTop() < $(this).scrollTop()) {
+		if ($('#id-mission').scrollTop() < $(this).scrollTop()) {
 			$('#back-to-top').fadeIn();
 		} else {
 			$('#back-to-top').fadeOut();
