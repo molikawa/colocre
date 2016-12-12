@@ -14,6 +14,21 @@ $(function() {
 		secTops[i+1] = $(this).offset().top;
 	});
 	/*secTops[secTops.length] = $('footer').offset().top;*/
+	
+	var timer = false;
+	$(window).resize(function() {
+		if (false != timer) {
+			clearTimeout(timer);
+		}
+		timer = setTimeout(function() {
+			pageHeight = $('body').outerHeight(true);
+			secTops[0] = $('header').offset().top;
+			$('section').each(function (i) {
+				secTops[i+1] = $(this).offset().top;
+			});
+		}, 200);
+	});
+	
 	var curSecNum = -1;
 	$(window).scroll(function () {
 		for (var i = secTops.length-1; 0 <= i; --i) {
