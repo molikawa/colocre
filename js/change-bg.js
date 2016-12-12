@@ -17,7 +17,7 @@ $(function() {
 	var curSecNum = -1;
 	$(window).scroll(function () {
 		for (var i = secTops.length-1; 0 <= i; --i) {
-			if ((secTops[i] - 100) < $(window).scrollTop()) {
+			if ((secTops[i] - 200) < $(window).scrollTop()) {
 				changeBgImage(i);
 				break;
 			}
