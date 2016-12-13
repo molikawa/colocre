@@ -1,3 +1,9 @@
+$('#body-wrapper').append('<div id="bg-sec0"></div>');
+$("<img>").attr("src", "img/bg-mission.jpg");
+$("<img>").attr("src", "img/bg-works.jpg");
+$("<img>").attr("src", "img/bg-rolls.jpg");
+$("<img>").attr("src", "img/bg-members.jpg");
+$("<img>").attr("src", "img/bg-news.jpg");
 $(function() {
 	var secTops = new Array();
 	var navClickFlug = false;
