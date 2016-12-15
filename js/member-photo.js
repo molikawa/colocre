@@ -4,14 +4,14 @@
 → マウスオーバー時 -2.jpg (画像の形式はその他 .png など)
 */
 $(function(){
-	$('.member-photo').hover(
-		function(){
-			$(this).attr('src', $(this).attr('src').replace('-1', '-2'));
-		}, 
-		function(){
-			$(this).attr('src', $(this).attr('src').replace('-2', '-1'));
-		}
-	);
+  $('.member-photo').hover(
+    function(){
+      $(this).attr('src', $(this).attr('src').replace('-1', '-2'));
+    }, 
+    function(){
+      $(this).attr('src', $(this).attr('src').replace('-2', '-1'));
+    }
+  );
 });
 
 /*
