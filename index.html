@@ -13,320 +13,459 @@
 <!-- Wow.js -->
     <script src="js/lib/wow.min.js"></script>
     <script>new WOW().init();</script>
-<!-- Hover CSS for dynamic underline -->
-    <!--<link href="css/lib/hover-min.css" rel="stylesheet" media="all">-->
+<!-- Hover CSS  -->
+    <link rel="stylesheet" href="css/lib/hover-min.css" media="all">
 <!-- CSS for this -->
     <link rel="stylesheet" href="css/style.css">
 
 <!-- jQuery lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-<!-- Tether lib -->
+<!-- Tether lib for Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-<!-- Bootstrap lib -->
+<!-- Bootstrap lib (ver.4) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 <!-- background image changer -->
   <script src="js/bg-changer.js"></script>
 
-<!-- Google Font -->
-    <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=?">-->
 <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/22882a4b64.js"></script>
   </head>
 
-  <body>
-    <div id="body-wrapper">
-      <header class="header" id="top">
+  <body id="body-wrapper">
+    <header id="top">
 <!--
 Navigation
 -->      
-        <nav class="navbar navbar-light">
-          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-          <div class="collapse navbar-toggleable-xs" id="navbarResponsive">
-            <a class="navbar-brand" href="#"><i class="fa fa-cubes" aria-hidden="true"></i></a>
-            <ul class="nav navbar-nav">
-              <li class="nav-item"><a href="#mission" class="nav-link">Mission</a>
-              </li>
-              <li class="nav-item"><a href="#works" class="nav-link">Works</a>
-              </li>
-              <li class="nav-item"><a href="#rolls" class="nav-link">Rolls</a>
-              </li>
-              <li class="nav-item"><a href="#members" class="nav-link">Members</a>
-              </li>
-              <li class="nav-item"><a href="#news" class="nav-link">News</a>
-              </li>
-              <li class="nav-item"><a href="#contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <nav class="navbar navbar-light">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-xs" id="navbarResponsive">  
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link"><img src="img/logo-mini.png" alt="ミニロゴ"></a>
+            <li class="nav-item"><a href="#mission" class="nav-link">Mission</a>
+            <li class="nav-item"><a href="#works" class="nav-link">Works</a>
+            <li class="nav-item"><a href="#way" class="nav-link">Way</a>
+            <li class="nav-item"><a href="#rolls" class="nav-link">Rolls</a>
+            <!--
+            <li class="nav-item"><a href="#members" class="nav-link">Members</a>
+            -->
+            <li class="nav-item"><a href="#news" class="nav-link">News</a>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="main">
 <!--
 Logo
 -->
-        <div class="text-xs-center">
-          <img src="img/logo.jpg" alt="COLOCREロゴ" class="img-float title-logo">
-          <h2 class="main-title text-xs-center">
-            <span class="animated fadeIn title-c">C</span>
-            <span class="animated fadeIn title-co">O</span>
-            <span class="animated fadeIn title-col">L</span>
-            <span class="animated fadeIn title-colo">O</span>
-            <span class="animated fadeIn title-coloc">C</span>
-            <span class="animated fadeIn title-colocr">R</span>
-            <span class="animated fadeIn title-colocre">E</span>
-          </h2>
-          <h6 class="sub-title text-xs-center animated fadeIn sub-title-animation">Colorful Creators</h6>
-        </div>
-      </header>
+      <div class="text-xs-center" id="title">
+        <img src="img/logo.png" alt="COLOCREロゴ" class="img-float wow tada" id="title-logo">
+        <h4 class="text-xs-center" id="main-title">
+          <span class="animated fadeIn title-c">C</span>
+          <span class="animated fadeIn title-co">O</span>
+          <span class="animated fadeIn title-col">L</span>
+          <span class="animated fadeIn title-colo">O</span>
+          <span class="animated fadeIn title-coloc">C</span>
+          <span class="animated fadeIn title-colocr">R</span>
+          <span class="animated fadeIn title-colocre">E</span>
+        </h4>
+        <h6 class="text-xs-center animated fadeIn sub-title-animation" id="sub-title">Colorful Creators</h6>
+      </div>
+    
       
-      <main class="main">
+    
 <!--
 Mission
 -->
-        <section class="text-xs-center" id="mission">
-          <h1 class="section-title">Mission</h1>
-          <h4 class="mission-title"><u>『 面白い 』を現実に　</u></h4>
-          <div class="mission-text">
-            <div class="hidden-sm-down">
-            <p>
-            僕たちは、面白いことを考えると、<br/>
-            常識的になれとささやかれ、人生をあきらめてきた。
-            </p>
-            <p>
-            アインシュタインは言う。<br/>
-            常識とは、１８歳までに身につけた偏見のコレクションだと。
-            </p>
-            <p>
-            あたりまえだけど、人生の時間は限られている。<br/>
-            今、面白いカラクリで、人々に感動を届けるチャンスが到来した。<br/>
-            信じてもらえるかはわからない。だから、言葉ではなく行動でみせる。
-            </p>
-            <p>
-            『面白いカラクリで世界中の人をワクワクさせる』<br/>
-            それがチームCOLOCREのミッション。
-            </p>
-            <p>
-            このミッションを実現するために、僕たちは、<br>
-            仲間を集め、みんなの力を合わせて、アイデアをカタチにする。<br/>
-            そして、世界を面白くできる存在になれるということを証明する。
-            </p>
-            </div>
-            <div class="hidden-sm-up">
-            <p><small>
-            僕たちは、面白いことを考えると、<br/>
-            常識的になれとささやかれ、<br/>
-            人生をあきらめてきた。
-            </small></p>
-            <p><small>
-            アインシュタインは言う。<br/>
-            常識とは、<br/>
-            １８歳までに身につけた偏見のコレクションだと。
-            </small></p>
-            <p><small>
-            あたりまえだけど、人生の時間は限られている。<br/>
-            今、面白いカラクリで、<br/>
-            人々に感動を届けるチャンスが到来した。<br/>
-            信じてもらえるかはわからない。<br/>
-            だから、言葉ではなく行動でみせる。
-            </small></p>
-            <p><small>
-            『面白いカラクリで世界中の人をワクワクさせる』<br/>
-            それがチームCOLOCREのミッション。
-            </small></p>
-            <p><small>
-            このミッションを実現するために、<br/>
-            僕たちは、<br>
-            仲間を集め、みんなの力を合わせて、<br/>
-            アイデアをカタチにする。<br/>
-            そして、<br/>
-            世界を面白くできる存在になれる<br/>
-            ということを証明する。
-            </small></p>
-            </div>
+      <section class="text-xs-center" id="mission">
+        <h1 class="section-title">Mission</h1>
+        <h4 class="mission-title"><u>『 面白い 』を現実に　</u></h4>
+        <div class="mission-text">
+<!-- TODO: 以下、PC用スマホ用で文字サイズ（と改行）を切り替えるために同じ文章を2度書きしているので改良を要検討。-->
+          <div class="hidden-sm-down">　
+          <p>
+          僕たちは、面白いことを考えると、<br/>
+          常識的になれとささやかれ、人生をあきらめてきた。
+          </p>
+          <p>
+          アインシュタインは言う。<br/>
+          常識とは、１８歳までに身につけた偏見のコレクションだと。
+          </p>
+          <p>
+          あたりまえだけど、人生の時間は限られている。<br/>
+          今、面白いカラクリで、人々に感動を届けるチャンスが到来した。<br/>
+          信じてもらえるかはわからない。だから、言葉ではなく行動でみせる。
+          </p>
+          <p>
+          『面白いカラクリで世界中の人をワクワクさせる』<br/>
+          それがチームCOLOCREのミッション。
+          </p>
+          <p>
+          このミッションを実現するために、僕たちは、<br>
+          仲間を集め、みんなの力を合わせて、アイデアをカタチにする。<br/>
+          そして、世界を面白くできる存在になれるということを証明する。
+          </p>
           </div>
-        </section>
+          <div class="hidden-sm-up">
+          <p><small>
+          僕たちは、面白いことを考えると、<br/>
+          常識的になれとささやかれ、<br/>
+          人生をあきらめてきた。
+          </small></p>
+          <p><small>
+          アインシュタインは言う。<br/>
+          常識とは、<br/>
+          １８歳までに身につけた偏見のコレクションだと。
+          </small></p>
+          <p><small>
+          あたりまえだけど、人生の時間は限られている。<br/>
+          今、面白いカラクリで、<br/>
+          人々に感動を届けるチャンスが到来した。<br/>
+          信じてもらえるかはわからない。<br/>
+          だから、言葉ではなく行動でみせる。
+          </small></p>
+          <p><small>
+          『面白いカラクリで世界中の人をワクワクさせる』<br/>
+          それがチームCOLOCREのミッション。
+          </small></p>
+          <p><small>
+          このミッションを実現するために、<br/>
+          僕たちは、<br>
+          仲間を集め、みんなの力を合わせて、<br/>
+          アイデアをカタチにする。<br/>
+          そして、<br/>
+          世界を面白くできる存在になれる<br/>
+          ということを証明する。
+          </small></p>
+          </div>
+        </div>
+      </section>
 
 <!--
 Works
 -->
-        <section class="text-xs-center" id="works">
-          <h1 class="section-title">Works</h1>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-12 wow bounceInDown" data-wow-delay="0.0s">
-                <div class="card card-block">
-                  <img class="img-fluid" src="img/works/bg-ichihime.jpg" alt="カラクリ杜のくノ一姫用背景">
-                  <div class="card-img-overlay">
-                    <img class="img-fluid" src="img/works/ichihime.jpg" alt="カラクリ杜のくノ一姫">
-                    <h5 class="card-title text-xs-center work-title">カラクリ杜のくノ一姫</h5>
-                    <ul class="card-text text-xs-left work-text">
-                      <li><small>説明１</small></li>
-                      <li><small>説明２</small></li>
-                      <li><small>説明３</small></li>
-                      <li><small>説明４</small></li>
-                    </ul>
+      <section class="text-xs-center" id="works">
+        <h1 class="section-title">Works</h1>
+        <h5 class="section-abst">「面白いを現実に」する<br class="hidden-sm-up">COLOCREコンテンツ</h5>
+        <div class="container">
+          <div class="row">
+            <!-- カラクリWEB -->
+            <div class="col-md-4 col-xs-12 wow bounceInDown" data-wow-delay="0.0s">
+              <div class="card">
+                <div class="card-block">
+                  <img class="card-img-top img-fluid" src="img/works/web.jpg" alt="カラクリWEB">
+                  <div class="card-block" id="work-web">
+                    <h4 class="card-title text-xs-center work-title">カラクリWEB</h4>
+                    <div class="card-text text-xs-left work-text">
+                      <p class="text-xs-center work-goal">ゴール</p>
+                      Webサイトをデザイン・コーディング・AIでカラクリ化し、日本一のカラクリWebサイトを創る
+                    </div>
+                    <div class="card-text text-xs-left work-text">
+                      <p class="text-xs-center work-goal">プロダクト</p>
+                      <ul>
+                        <li>カラクリデザイン
+                        <li>カラクリコーディング
+                        <li>カラクリAI
+                     </ul>
+                    </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <!-- カラクリ杜のくノ一姫 -->
+            <div class="col-md-4 col-xs-12 wow bounceInDown" data-wow-delay="0.2s">
+              <div class="card">
+                <div class="card-block">
+                  <img class="card-img-top img-fluid" src="img/works/ichihime.jpg" alt="カラクリ杜のくノ一姫">
+                  <div class="card-block" id="work-ichihime">
+                    <h4 class="card-title text-xs-center work-title">カラクリ杜のくノ一姫</h4>
+                    <div class="card-text text-xs-left work-text">
+                      <p class="text-xs-center work-goal">ゴール</p>
+                      アイドルユニットの衣装・小物・ステージをカラクリ化し、日本一のカラクリアイドルユニットを創る
+                    </div>
+                    <div class="card-text text-xs-left work-text">
+                      <p class="text-xs-center work-goal">プロダクト</p>
+                      <ul>
+                        <li>カラクリ衣装
+                        <li>カラクリ小物
+                        <li>カラクリステージ
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 wow bounceInDown" data-wow-delay="0.15s">
-                <div class="card card-block">
-                  <img class="img-fluid work-notyet" src="img/works/bg-karakurinomori.jpg" alt="からくりの杜用背景">
-                  <div class="card-img-overlay">
-                    <img class="img-fluid" src="img/works/karakurinomori.jpg" alt="からくりの杜">
-                    <h5 class="card-title text-xs-center work-title-notyet">からくりの杜</h5>
-                    <ul class="card-text text-xs-left work-text-notyet">
-                      <li><small>からくりプロジェクションマッピング</small></li>
-                      <li><small>平成の四谷用水</small></li>
-                      <li><small>光の回廊</small></li>
-                      <li><small>からくりアーケード</small></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12 wow bounceInDown" data-wow-delay="0.30s">
-                <div class="card card-block">
-                  <img class="img-fluid work-notyet" src="img/works/bg-karakuri.jpg" alt="からくり用背景">
-                  <div class="card-img-overlay">
-                    <img class="img-fluid" src="img/works/karakuri.jpg" alt="からくり">
-                    <h5 class="card-title text-xs-center work-title-notyet">からくり</h5>
-                    <ul class="card-text text-xs-left work-text-notyet">
-                      <li><small>説明１</small></li>
-                      <li><small>説明２</small></li>
-                    </ul>
+            </div>
+            <!-- カラクリの街 -->
+            <div class="col-md-4 col-xs-12 wow bounceInDown" data-wow-delay="0.4s">
+              <div class="card">
+                <div class="card-block">
+                  <img class="card-img-top img-fluid" src="img/works/machi.jpg" alt="カラクリの街">
+                  <div class="card-block" id="work-machi">
+                    <h4 class="card-title text-xs-center work-title">カラクリの街</h4>
+                    <div class="card-text text-xs-left work-text">
+                      <p class="text-xs-center work-goal">ゴール</p>
+                      宮城県の観光施設を構想・設計・建設でカラクリ化し、日本一のカラクリの街を創る
+                    </div>
+                    <div class="card-text text-xs-left work-text">
+                      <p class="text-xs-center work-goal">プロダクト</p>
+                      <ul>
+                        <li>カラクリ観光施設の構想
+                        <li>カラクリ観光施設の設計
+                        <li>カラクリ観光施設の建設
+                      </ul>
+                      <small>（注）「SENDAI光のページェント」はコンテンツイメージでありCOLOCREコンテンツではありません。</small>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-                    
+        </div>
+      </section>
+        
+<!--
+Way
+-->
+      <section class="text-xs-center" id="way">
+        <h1 class="section-title">Our Way</h1>
+        <h4 class="way-title"><u>『 面白い 』人生を、ともに　</u></h4>
+        <div class="way-text">
+<!-- TODO: 以下、PC用スマホ用で文字サイズ（と改行）を切り替えるために同じ文章を2度書きしているので改良を要検討。-->
+          <div class="hidden-sm-down">　
+          <p>
+          21世紀、寛容さが失われ、つまらない時代に突入した。<br>
+          そして、人は結果を求められ、求める存在となった。<br>
+          人生に結果を求めるとすれば、それは「人は死ぬ」ということだけ。
+          </p>
+          <p>	 	 	 
+	 	 	    僕たちが、チームカラクリでプロボノとして参画している理由は、<br>
+          築いてきた知識や経験を、本当に面白いと思えるコトに使いたいから。
+          </p>
+          <p>	 	 	 
+          人生の時間を自分のためにだけに使うのではなく、<br>
+          僕たちが死んだ後にも残る、「面白いコト」に人生の時間を捧げたい。
+          </p>
+          <p>		 	 
+          だから、僕たちは希望を持って歩み続ける。<br>
+          その歩みのプロセスが、「面白い人生」そのものだから。<br>
+          仲間達との共創で「自分が成長」し、世界が広がるから。<br>
+          一人では創造出来ない「面白いコト」を、実現できるから。
+          </p>
+          <p>	 	 
+          人生は一度きり。『面白い』人生を、ともに。
+          </p>
+          </div>
+          <div class="hidden-sm-up">
+          <p><small>
+          21世紀、寛容さが失われ、<br>つまらない時代に突入した。<br>
+          そして、人は結果を求められ、<br>求める存在となった。<br>
+          人生に結果を求めるとすれば、<br>それは「人は死ぬ」ということだけ。
+          </small></p>
+          <p><small>
+	 	 	    僕たちが、チームカラクリで<br>プロボノとして参画している理由は、<br>
+          築いてきた知識や経験を、<br>本当に面白いと思えるコトに使いたいから。
+          </small></p>
+          <p><small>
+          人生の時間を自分のためにだけに使うのではなく、<br>
+          僕たちが死んだ後にも残る、<br>「面白いコト」に人生の時間を捧げたい。
+          </small></p>
+          <p><small>
+          だから、僕たちは希望を持って歩み続ける。<br>
+          その歩みのプロセスが、<br>「面白い人生」そのものだから。<br>
+          仲間達との共創で「自分が成長」し、<br>世界が広がるから。<br>
+          一人では創造出来ない「面白いコト」を、<br>実現できるから。
+          </small></p>
+          <p><small>
+          人生は一度きり。<br>
+          『面白い』人生を、ともに。
+          </small></p>
+          </div>
+        </div>
+      </section>
+                       
 <!--
 Rolls
 -->
-        <section class="text-xs-center" id="rolls">
-          <h1 class="section-title">Rolls</h1>
+      <section class="text-xs-center" id="rolls">
+        <h1 class="section-title">Rolls</h1>
+        <h5 class="section-abst">「面白い人生をともに」する<br class="hidden-sm-up">メンバーの役割</h5>
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-xs-12">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="card">
                   <div class="card-block">
-                    <p class="display-1 text-xs-center"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+                    <p class="display-1 text-xs-center hvr-pop"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
                     <h4 class="card-title text-xs-center">企画発創</h4>
-                    <p class="card-text text-xs-center">プロデューサー</p>
+                    <p class="card-text text-xs-center">プランナー</p>
+                    <ul class="card-text text-xs-left">
+                      <li>広報の企画</li>
+                      <li>イベントの企画</li>
+                      <li>グッズの企画</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-xs-12">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="card">
                   <div class="card-block">
-                    <p class="display-1 text-xs-center"><i class="fa fa-paint-brush" aria-hidden="true"></i></p>
+                    <p class="display-1 text-xs-center hvr-wobble-horizontal"><i class="fa fa-paint-brush" aria-hidden="true"></i></p>
                     <h4 class="card-title text-xs-center">視覚美創</h4>
                     <p class="card-text text-xs-center">デザイナー</p>
+                    <ul class="card-text text-xs-left">
+                      <li>Webデザイナー</li>
+                      <li>衣装デザイナー</li>
+                      <li>CGデザイナー</li>
+                      <li>ステージデザイナー</li>
+                      <li>都市デザイナー</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-xs-12">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="card">
                   <div class="card-block">
-                    <p class="display-1 text-xs-center"><i class="fa fa-code" aria-hidden="true"></i></p>
+                    <p class="display-1 text-xs-center hvr-forward"><i class="fa fa-code" aria-hidden="true"></i></p>
                     <h4 class="card-title text-xs-center">電脳技工</h4>
-                    <p class="card-text text-xs-center">プログラマー</p>
+                    <p class="card-text text-xs-center">エンジニア</p>
+                    <ul class="card-text text-xs-left">
+                      <li>フロントエンジニア</li>
+                      <li>ロボットエンジニア</li>
+                      <li>組み込みエンジニア</li>
+                      <li>音響エンジニア</li>
+                      <li>プロジェクションマッピングエンジニア</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-xs-12">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="card">
                   <div class="card-block">
-                    <p class="display-1 text-xs-center"><i class="fa fa-gear" aria-hidden="true"></i></p>
+                    <p class="display-1 text-xs-center hvr-rotate"><i class="fa fa-gear" aria-hidden="true"></i></p>
                     <h4 class="card-title text-xs-center">機巧職人</h4>
-                    <p class="card-text text-xs-center">からくり担当</p>
+                    <p class="card-text text-xs-center">専門技術者</p>
+                    <ul class="card-text text-xs-left">
+                      <li>カメラマン</li>
+                      <li>画像・映像編集</li>
+                      <li>科学実験アドバイザー</li>
+                      <li>建築家</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="card">
+                  <div class="card-block">
+                    <p class="display-1 text-xs-center hvr-push"><i class="fa fa-life-ring" aria-hidden="true"></i></p>
+                    <h4 class="card-title text-xs-center">後方支援</h4>
+                    <p class="card-text text-xs-center">サポーター</p>
+                    <ul class="card-text text-xs-left">
+                      <li>プロジェクトのサポート</li>
+                      <li>イベントのサポート</li>
+                      <li>メンバーのサポート</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+      </section>
                   
 <!--
 Members
 -->
-        <section class="text-xs-center" id="members">
-          <h1 class="section-title">Members</h1>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                <img src="img/members/katsusan-1.jpg" alt="かつさん" class="img-fluid member-photo">
-                <p class="text-white nickname-label bgcolor-red">かつさん</p>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
-                <img src="img/members/katherine-1.jpg" alt="キャサリン" class="img-fluid member-photo">
-                <p class="text-white nickname-label bgcolor-orange">キャサリン</p>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
-                <img src="img/members/sakanachan-1.jpg" alt="サカナちゃん" class="img-fluid member-photo">
-                <p class="text-white nickname-label bgcolor-yellow">サカナちゃん</p>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
-                <img src="img/members/shibasan-1.jpg" alt="柴さん" class="img-fluid member-photo">
-                <p class="text-white nickname-label bgcolor-green">柴さん</p>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
-                <img src="img/members/michael-1.jpg" alt="マイコー" class="img-fluid member-photo">
-                <p class="text-white nickname-label bgcolor-blue">マイコー</p>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
-                <img src="img/members/mory-1.jpg" alt="もーりぃ" class="img-fluid member-photo">
-                <p class="text-white nickname-label bgcolor-indigo">もーりぃ</p>
-              </div>
+<!--
+      <section class="text-xs-center" id="members">
+        <h1 class="section-title">Members</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+              <img src="img/members/katsusan-1.jpg" alt="かつさん" class="img-fluid member-photo">
+              <p class="text-white nickname-label bgcolor-red">かつさん</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
+              <img src="img/members/katherine-1.jpg" alt="キャサリン" class="img-fluid member-photo">
+              <p class="text-white nickname-label bgcolor-orange">キャサリン</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
+              <img src="img/members/sakanachan-1.jpg" alt="サカナちゃん" class="img-fluid member-photo">
+              <p class="text-white nickname-label bgcolor-yellow">サカナちゃん</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
+              <img src="img/members/shibasan-1.jpg" alt="柴さん" class="img-fluid member-photo">
+              <p class="text-white nickname-label bgcolor-green">柴さん</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
+              <img src="img/members/michael-1.jpg" alt="マイコー" class="img-fluid member-photo">
+              <p class="text-white nickname-label bgcolor-blue">マイコー</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 member-box">
+              <img src="img/members/mory-1.jpg" alt="もーりぃ" class="img-fluid member-photo">
+              <p class="text-white nickname-label bgcolor-indigo">もーりぃ</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+-->
 
 <!--
 News
 -->
-        <section class="text-xs-center" id="news">
-          <h1 class="section-title">News</h1>
-          <table class="table table-striped">
-            <tbody>
-              <tr>
-                <td class="text-xs-right"><time datetime="2016-12-17">2016.12.17 SAT.</time></td>
-                <td class="text-xs-left">チーム COLOCRE のWEBサイトをオープンしました</td>
-              </tr>
-              <tr>
-                <td class="text-xs-right"><time datetime="2016-11-09T19:00+09:00">2016.11.09 WED.</time></td>
-                <td class="text-xs-left">カラクリ杜のくノ一姫 デビュー！</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+      <section class="text-xs-center" id="news">
+        <h1 class="section-title">News</h1>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td class="text-xs-right"><time datetime="2016-12-23T18:00+09:00">2016.12.23 FRI. 18:00</time></td>
+              <td class="text-xs-left">カラクリ杜のくノ一姫　SENDAI光のページェント　ステージデビュー</td>
+            </tr>
+            <!--
+            <tr>
+              <td class="text-xs-right"><time datetime="2016-11-09T19:00+09:00">2016.11.09 WED.</time></td>
+              <td class="text-xs-left">カラクリ杜のくノ一姫 デビュー！</td>
+            </tr>
+            -->
+          </tbody>
+        </table>
+      </section>
 
 <!--
 Contact
 -->
-        <section class="text-xs-center" id="contact">
-          <h1 class="section-title contact-title">Contact</h1>
-          <p class="contact-text">
-            COLOCREの活動に参加したいと思ったあなた、colocre@gmail.com までご連絡ください。<br>
-            あなたからの連絡を待っています！
-          </p>
-        </section>
+      <section class="text-xs-center" id="contact">
+        <h1 class="section-title contact-title">Pro bono</h1>
+        <h5 class="section-abst contact-title">チームメンバー募集</h5>
+        <p class="contact-text text-xs-center">
+        僕たちが
+        <button id="probono" type="button" class="btn btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="各分野の専門家が、職業上持っている知識・スキルや経験を活かして社会貢献するボランティア活動">
+        Pro bono（プロボノ）
+        </button>
+        としてチームCOLOCRE（カラクリ）に参画しているのは、単純に面白いことが好きだからです。<br>
+        チームCOLOCREでは一緒にこの活動を盛り上げてくれるメンバーを募集しています。<br>
+        専門知識がない方でも、学生の方でも。そして技術系でなくても企画やサポートなどの役割を担ってくれる方が必要です。<br>
+        『「面白い」を現実に』したいと思ったら、お気軽に contact@colocre までお問い合わせください。
+        </p>
+      </section>
 
-      </main>
+    </main>
 <!--
 Footer
 -->
-      <footer class="text-xs-center">
-        Copyright ©︎ 2016 COLOCRE
-      </footer>
+    <footer class="text-xs-center footer">
+    Copyright ©︎ 2016 COLOCRE
+    </footer>
 
 
-      <a id="back-to-top" href="#" class="btn btn-outline-primary btn-md" role="button" data-toggle="tooltip" data-placement="center">
-        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-      </a>
-    </div>
+    <a id="back-to-top" href="#" class="btn btn-outline-primary btn-md" role="button" data-toggle="tooltip" data-placement="center">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
     
     <script src="js/member-photo.js"></script>
     <script src="js/bg-changer.js"></script>
     <script src="js/back-to-top.js"></script>
+    <script>$(function () {$('[data-toggle="tooltip"]').tooltip()});</script>
   </body>
 </html>
           
